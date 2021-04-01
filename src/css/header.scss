@@ -1,0 +1,162 @@
+.site__header {
+	width: 100%;
+    height: 800px;
+    position: relative;
+	margin-bottom: 50px;
+}
+
+.site__header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        url("../img/header-left.png"),
+        url("../img/header-right.jpg");
+    background-position: 
+        left bottom,
+        right bottom;
+    background-repeat: no-repeat;
+}
+
+.header__content {
+	width: 650px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.site__logo {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.header__title-wrapper {
+	width: 635px;
+	height: 200px;
+	background-color: #EFE0DE;
+	padding: 25px 50px;
+	position: relative;
+	margin-left: -50px;
+	margin-bottom: 55px;
+}
+
+.header__title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 156%;
+	color: #2F2F2F;
+}
+
+.header__sale {
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	bottom: -25px;
+	right: -50px;
+	background-color: #6475F5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 50px;
+	color: #FFFFFF;
+}
+
+.header__text {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 150%;
+	color: #2F2F2F;
+	margin-bottom: 50px;
+}
+
+.header__order {
+	width: 310px;
+	height: auto;
+}
+
+.price {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 20px;
+}
+
+.old__price {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 29px;
+	text-decoration: line-through;
+	color: #2F2F2F;
+}
+
+.new__price {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 44px;
+	line-height: 59px;
+	color: #C11855;
+	// word-wrap: normal;
+}
+
+.header__order-btn {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	background-color: #C11855;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 60px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.header__order-btn:hover {
+	background-color: #950237;
+}
+
+.sale__line {
+	width: 2050px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #6475F5;
+	span {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 50px;
+		color: #FFFFFF;
+		margin: 0 25px;
+		word-wrap: normal;
+	}
+}
+
