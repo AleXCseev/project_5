@@ -1,3 +1,8 @@
+.site__main {
+	width: 100%;
+	height: auto;
+}
+
 .first__section {
 	width: 100%;
 	height: auto;
@@ -102,7 +107,7 @@
 .summer__foto-1 {
 	width: 500px;
 	height: 590px;
-	z-index: 5;
+	z-index: 10;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 	top: -136px;
 	left: -50px;
