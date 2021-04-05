@@ -1,45 +1,218 @@
 @media (max-width: 1600px) {
-	
+	.site__header {
+		height: 650px;
+		background-color: #F3F3F3;
+	}
+	.site__header:before {
+		background-image: 
+        url("../img/header-left.png"),
+        url("../img/header-right.jpg");
+		background-position: 
+			left bottom,
+			10% bottom;
+		background-size: 40%, cover;
+	}
+	.site__logo {
+		margin-bottom: 20px;
+	}
+	.header__title-wrapper {
+		height: auto;
+	}
+	.header__title {
+		font-size: 42px;
+	}
+	.header__text {
+		margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 1440px) {
-	
+	.container {
+		width: 1000px;
+	}
+	.site__header:before {
+		background-position: 
+			left bottom,
+			5% bottom;
+	}
 }
 
 @media (max-width: 1200px) {
-	
+	.container {
+		width: 900px;
+	}
+	.site__header:before {
+		background-position: 
+			left bottom,
+			-100px bottom;
+	}
+	.summer__foto-1 {
+		top: 0;
+	}
 }
 
 @media (max-width: 1080px) {
+	.site__header {
+		height: 750px;
+	}
+	.container {
+		width: 800px;
+	}
+	.site__header:before {
+		background-position: 
+			left bottom,
+			-400px top;
+			background-size: 60%, 190%;
+	}
 	
 }
 
 @media (max-width: 880px) {
-	
+	.site__header {
+		height: 650px;
+		margin: 0;
+		display: flex;
+		align-items: flex-start;
+	}
+	.site__header:after {
+		content: "";
+		width: 100%;
+		height: 100px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: rgba(193, 24, 85, 0.5);
+		background-image: url("../img/logo-white.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.container {
+		width: 640px;
+	}
+	.site__logo {
+		display: none;
+	}
+	.site__header:before {
+		background-position: 
+			left 100px,
+			-450px top;
+			background-size: 530px, 1650px;
+	}
+	.header__content {
+		position: static;
+		height: auto;
+		// justify-content: flex-end;
+		width: 400px;
+	}
+	.header__title-wrapper {
+		background-color: transparent;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		position: static;
+	}
+	.header__title {
+		font-size: 32px;
+		margin-top: 120px;
+	}
+	.header__sale {
+		top: 80px;
+		right: 50px;
+		z-index: 10;
+		width: 100px;
+		height: 100px;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 125%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.site__header .sale__line {
+		bottom: 0px;
+		z-index: 5;
+	}
 }
 
 @media (max-width: 740px) {
-	
+	.site__header:before {
+		background-position: 
+			left 100px,
+			-400px top;
+			background-size: 530px, 1450px;
+	}
 }
 
 @media (max-width: 700px) {
-
+	.site__header:before {
+		background-position: 
+			left 100px,
+			-350px top;
+			background-size: 530px, 1300px;
+	}
+	.header__content {
+		width: 350px;
+	}
 }
 
 @media (max-width: 660px) {
-	
+	.site__header {
+		height: 850px;
+	}
+	.site__header:before {
+		background-image: 
+			url("../img/header-left.png"),
+			url("../img/header-birds.png"),
+			url("../img/header-right.jpg");
+		background-position: 
+			left bottom 40px,
+			300px 500px,
+			-550px top;
+		background-size: 
+			500px, 
+			250px, 
+			1250px;
+	}
+	.header__content {
+		width: 350px;
+	}
+	.container {
+		width: 500px
+	}
+	.header__content {
+		width: 100%;
+		margin-top: 350px;
+		align-items: center;
+	}
+	.header__title {
+		text-align: center;
+	}
+	.header__sale {
+		right: 0px;
+	}
+	.header__text {
+		display: none;
+	}
 }
 
 @media (max-width: 540px) {
-	
+	.container {
+		width: 400px;
+	}
 }
 
 @media (max-width: 414px) {
-
+	.container {
+		width: 360px;
+	}
 }
 
 @media (max-width: 375px) {
-	
+	.container {
+		width: 290px;
+	}
 }
 
 @media (max-width: 360px) {

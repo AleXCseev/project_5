@@ -42,7 +42,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 50px 50px 130px 50px;
+	padding: 40px 50px 130px 50px;
 	position: relative;
 	display: none;
 }
@@ -88,14 +88,14 @@
 
 .card__logo {
 	width: 146px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .card__title {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 167%;
 	text-align: left;
 	color: #2F2F2F;
@@ -106,10 +106,10 @@
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 187%;
 	color: #2F2F2F;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 .card__size-btns {
 	width: 100%;
@@ -218,19 +218,19 @@
 }
 
 .active__info {
-	display: flex;
+	display: flex !important;
 }
 
 .card__form {
 	width: 100%;
 	height: auto;
-	padding-top: 132px;
+	padding-top: 80px;
 }
 
 .card__input {
 	width: 100%;
 	height: 30px;
-	border-bottom: 1px solid #2F2F2F;
+	border-bottom: 1px solid #C11855;
 	margin-bottom: 30px;
 	font-family: Montserrat;
 	font-style: normal;
@@ -253,6 +253,17 @@
 	line-height: 30px;
 	color: #C11855;
 }
+
+.card__input:focus::placeholder {
+	border-bottom: 1px solid #2F2F2F;
+	color: #2F2F2F;
+}
+
+.card__input:focus {
+	border-bottom: 1px solid #2F2F2F;
+	color: #2F2F2F;
+}
+
 .card__info-sale {
 	font-family: Montserrat;
 	font-style: normal;
@@ -329,6 +340,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	transition: 0.3s ease;
 }
 
 .slider__btns {
@@ -337,7 +349,7 @@
 	right: 0;
 	width: 100px;
 	height: 50px;
-	z-index: 100000;
+	z-index: 100;
 	display: flex;
 }
 
@@ -388,6 +400,7 @@
 	display: flex;
 	bottom: 28px;
 	left: 50px;
+	z-index: 100;
 	li {
 		width: 50px;
 		height: 5px;
@@ -395,9 +408,10 @@
 		padding: 0;
 		button {
 			width: 50px;
-			height: 5px;
+			height: 50px;
 			margin: 0;
 			padding: 0;
+			margin-top: -25px;
 			&:before {
 				display: none;
 			}
@@ -407,6 +421,30 @@
 		width: 50px;
 		height: 5px;
 		background-color:#DEC1BC;
+	}
+	li.slick-active:before {
+		content: attr(data-current);
+		position: absolute;
+		top: -40px;
+		left: 0;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 125%;
+		color: #FFFFFF;
+	}
+	li.slick-active:after {
+		content: attr(data-next);
+		position: absolute;
+		top: -42px;
+		left: 40px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 167%;
+		color: #BDBDBD;
 	}
 }
 
@@ -536,6 +574,7 @@
 	width: 500px;
 	height: 840px;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	z-index: 20;
 }
 
 .review__img2-wrapper:before {
