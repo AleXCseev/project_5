@@ -163,32 +163,4 @@
 	}
 }
 
-.galary {
-	width: 100%;
-	padding: 0;
-	height: auto;
-	position: relative;
-	margin-bottom: 46px;
-	display: flex;
-	justify-content: space-between;
-}
 
-.galary__block {
-	width: 25%;
-	height: auto;
-	padding: 0;
-	a {
-		margin: 0;
-		padding: 0;
-	}
-}
-
-.galary__img {
-	width: 100%;
-	height: auto;
-	pointer-events: auto;
-}
-
-.galary .sale__line {
-	bottom: -46px;
-}

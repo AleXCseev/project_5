@@ -215,6 +215,9 @@
 	padding: 50px 50px 130px 50px;
 	position: relative;
 	display: none;
+	.card__title {
+		margin-top: -80px;
+	}
 }
 
 .active__info {
@@ -224,7 +227,7 @@
 .card__form {
 	width: 100%;
 	height: auto;
-	padding-top: 80px;
+	// padding-top: 80px;
 }
 
 .card__input {

@@ -6,6 +6,8 @@
 .first__section {
 	width: 100%;
 	height: auto;
+	position: relative;
+	margin-bottom: 46px;
 }
 
 .summer__section {
@@ -39,8 +41,15 @@
 	transform: rotate(-90deg);
 }
 
-.block__title {
+.title__wrapper {
 	width: 100%;
+	margin-top: 70px;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+.block__title {
+	display: inline-block;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
@@ -49,7 +58,7 @@
 	text-align: right;
 	color: #2F2F2F;
 	position: relative;
-	margin-top: 70px;
+	width: auto;
 }
 
 .block__title:before {
@@ -60,7 +69,12 @@
 	right: 0;
 	position: absolute;
 	background-color: #6475F5;
+	transition: 0.3s ease;
 } 
+
+.block__title:hover:before {
+	width: 100%;
+}
 
 .advantages {
 	margin-top: 400px;
@@ -229,4 +243,34 @@
 	display: flex;
 	justify-content: flex-end;
 	text-align: right;
+}
+
+.galary {
+	width: 100%;
+	padding: 0;
+	height: auto;
+	position: relative;
+	margin-bottom: 46px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.galary__block {
+	width: 25%;
+	height: auto;
+	padding: 0;
+	a {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.galary__img {
+	width: 100%;
+	height: auto;
+	pointer-events: auto;
+}
+
+.first__section .sale__line {
+	bottom: -46px;
 }

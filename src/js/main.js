@@ -29,7 +29,6 @@ $(function () {
 		prevArrow: $('.card__3 .btn__prev'),
 		nextArrow: $('.card__3 .btn__next'),
 	});
-
 	$('.review__slider .slider').slick({
 		slidesToShow: 1,
   		slidesToScroll: 1,
@@ -50,6 +49,7 @@ $(function () {
 			console.log(fixedOffset);
 		e.preventDefault();
 	});
+
 
 	function modal() {
 		$(".add__review").click(function () {
@@ -126,23 +126,37 @@ $(function () {
 
 	galary(".card__2")
 
-	function sliderIndicator(selector) {
+	function sliderIndicator(selector, slides) {
 		$(selector + " .slick-dots li").each(function(index) {
-			$(this)
-				.attr("data-current", "0" + (index + 1))
-				.attr("data-next", "0" + (index + 2));
-			if(index == 4) {
+			if( index === slides - 1) {
 				$(this)
 					.attr("data-current", "0" + (index + 1))
-					.attr("data-next", "0" + 1)
+					.attr("data-next", "0" + 1);
+				return
+			} else {
+				$(this)
+					.attr("data-current", "0" + (index + 1))
+					.attr("data-next", "0" + (index + 2));
 			}
 		})
 	}
 
-	sliderIndicator(".card__1");
-	sliderIndicator(".card__2");
-	sliderIndicator(".card__3");
-	sliderIndicator(".reviews");
+	sliderIndicator(".card__1", 5);
+	sliderIndicator(".card__2", 5);
+	sliderIndicator(".card__3", 5);
+	sliderIndicator(".reviews", 5);
+
+	if($(window).width() <= 600) {
+		$('.galary').slick({	
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			infinite: true,
+			dots: true,
+			arrows: false,
+		});
+		sliderIndicator(".galary", 4);
+	}
+	
 
 	$.fn.marquee = function() {
 		this.css({"overflow": "hidden", "white-space": "nowrap"});
@@ -160,21 +174,27 @@ $(function () {
 
 	$('.sale__line').marquee();
 
-	function cardSwitcher(selector) {
+	function cardSwitcher(selector, mark) {
 		$(selector + " .card__info-block .header__order-btn").click(function() {
 			$(selector + " .card__info-block").hide().removeClass("active__info");
 			$(selector + " .card__info-order").fadeIn(500).addClass("active__info");
+			if(mark) {
+				$(selector + " " + mark).addClass("active");
+			}
 		})
 		$(selector + " .card__info-order .card__back").click(function() {
 			$(selector + " .card__info-order").hide().removeClass("active__info");
 			$(selector + " .card__info-block").fadeIn(500).addClass("active__info");
+			if(mark) {
+				$(selector + " " + mark).removeClass("active");
+			}
 		})
 	}
 
 	cardSwitcher(".card__1")
 	cardSwitcher(".card__2")
 	cardSwitcher(".card__3")
-	cardSwitcher(".sprey__card")
+	cardSwitcher(".sprey__card", ".sprey__advantages")
 
 	var show = true;
     var countbox = ".info__block";
@@ -201,12 +221,26 @@ $(function () {
         }
     });
 
-	// $(document).mouseleave(function() {
-	// 	$(".banner").addClass("active");
-	// })
-
-	// $(".banner__close").click(function() {
-	// 	console.log("click")
-	// 	$(".banner").removeClass("active");
-	// })
+	function banner() {
+		$(document).mouseleave(function() {
+			var time = Date.now();
+			if(!localStorage.getItem('time')) {
+				console.log("ok")
+				localStorage.setItem('time', time + "");
+				$(".banner").addClass("active");
+			}
+			var currentLocalTime = +localStorage.getItem('time')
+			
+			if( currentLocalTime > ( time + 1000)) {
+				console.log(currentLocalTime, time + 1000)
+				localStorage.setItem('time', String(time));
+				$(".banner").addClass("active");
+			}
+		})
+	
+		$(".banner__close").click(function() {
+			$(".banner").removeClass("active");
+		})
+	}
+	banner()
 })
