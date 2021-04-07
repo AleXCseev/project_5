@@ -41,12 +41,17 @@ $(function () {
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
 		if ($(document).width() <= 600) {
-			fixedOffset = 700;
+			fixedOffset = 200;
+		}
+		if ($(document).width() <= 440) {
+			fixedOffset = 300;
+		}
+		if ($(document).width() <= 320) {
+			fixedOffset = 400;
 		}
 		$('html,body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
-			console.log(fixedOffset);
 		e.preventDefault();
 	});
 
@@ -146,16 +151,19 @@ $(function () {
 	sliderIndicator(".card__3", 5);
 	sliderIndicator(".reviews", 5);
 
-	if($(window).width() <= 600) {
-		$('.galary').slick({	
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			infinite: true,
-			dots: true,
-			arrows: false,
-		});
-		sliderIndicator(".galary", 4);
+	function initGalary() {
+		if($(window).width() <= 600) {
+			$('.galary').slick({	
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true,
+				arrows: false,
+			});
+			sliderIndicator(".galary", 4);
+		}
 	}
+	initGalary()
 	
 
 	$.fn.marquee = function() {
@@ -209,11 +217,8 @@ $(function () {
             $('.info__number').css('opacity', '1');
             $('.info__number').spincrement({
                 thousandSeparator: "",
-                duration: 2000,
-				leeway: 0,
-				complete: function (e) {
-					e.text( e.text() + "+")
-				  }
+                duration: 4000,
+				leeway: 1,
             });
 	
              
@@ -225,14 +230,12 @@ $(function () {
 		$(document).mouseleave(function() {
 			var time = Date.now();
 			if(!localStorage.getItem('time')) {
-				console.log("ok")
 				localStorage.setItem('time', time + "");
 				$(".banner").addClass("active");
 			}
 			var currentLocalTime = +localStorage.getItem('time')
 			
-			if( currentLocalTime > ( time + 1000)) {
-				console.log(currentLocalTime, time + 1000)
+			if( currentLocalTime < ( time - 300000)) {
 				localStorage.setItem('time', String(time));
 				$(".banner").addClass("active");
 			}

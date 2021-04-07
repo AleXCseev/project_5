@@ -25,7 +25,7 @@
 		margin-bottom: 20px;
 	}
 	.summer__section-wrapper {
-		height: 940px;
+		height: auto;
 	}
 	.summer__title {
 		left: -470px;
@@ -36,7 +36,7 @@
 	.summer__foto-1 {
 		width: 400px;
 		height: 500px;
-		top: -80px;
+		top: -60px;
 	}
 	.summer__foto-wrapper {
 		width: 400px;
@@ -47,9 +47,44 @@
 		height: 400px;
 	}
 	.advantages {
-		margin-top: 300px;
+		margin-top: 350px;
+	}
+	.galary__block {
+		max-height: 539px;
+	}
+	.site__footer {
+		background-color: #C11855;
+		width: 100%;
+		height: 445px;
+		background-image: 
+			url("../img/footer-left.png"),
+			url("../img/footer-right.png"),
+			url("../img/footer-birds.png");
+		background-repeat: no-repeat;
+		background-size: 
+			500px,
+			350px,
+			150px;
+		background-position: 
+			left bottom,
+			right bottom,
+			460px 35px;
+		position: relative;
+		z-index: 1;
+	}
+	.site__footer .container {
+		width: 1000px;
+	}
+	.footer__logo {
+		margin-top: 30px;
+		margin-bottom: 50px; 
+	}
+	.footer__title {
+		font-size: 44px;
 	}
 }
+
+
 
 @media (max-width: 1440px) {
 	.container {
@@ -66,7 +101,7 @@
 	}
 	.info__section {
 		height: 850px;
-		background-image: url(../img/info-bg.jpg);
+		background-image: url("../img/info-bg.jpg");
 		background-repeat: no-repeat;
 		background-position: left -300px bottom;
 		background-size: cover;
@@ -76,6 +111,9 @@
 	}
 	.summer__foto-wrapper {
 		bottom: -40px;
+	}
+	.galary__block {
+		max-height: 539px;
 	}
 	.info__blocks {
 		width: 420px;
@@ -139,8 +177,63 @@
 	.card__form {
 		width: 100%;
 	}
-	.card__info-order .card__title {
-		margin-top: -55px;
+	.reviews__section {
+		height: 1400px;
+	}
+	.review__img1-wrapper {
+		width: 400px;
+		height: 560px;
+	}
+	.review__img1-wrapper:before {
+		width: 400px;
+		height: 460px;
+	}
+	.review__img2-wrapper {
+		width: 420px;
+		height: 700px;
+	}
+	.review__img2-wrapper:before {
+		width: 420px;
+		height: 420px;
+	}
+	.delivery__wrapper {
+		margin-top: 180px;
+	}
+	.site__footer {
+		background-color: #C11855;
+		width: 100%;
+		height: 445px;
+		background-image: 
+			url("../img/footer-left.png"),
+			url("../img/footer-right.png"),
+			url("../img/footer-birds.png");
+		background-repeat: no-repeat;
+		background-size: 
+			400px,
+			300px,
+			150px;
+		background-position: 
+			left bottom,
+			right bottom,
+			440px 35px;
+		position: relative;
+		z-index: 1;
+	}
+	.site__footer .container {
+		width: 1000px;
+	}
+	.footer__logo {
+		margin-top: 30px;
+		margin-bottom: 50px; 
+	}
+	.footer__title {
+		font-size: 44px;
+	}
+}
+
+@media (max-width: 1366px) {
+	.galary__block {
+		max-height: 511px;
 	}
 }
 
@@ -154,7 +247,7 @@
 			-100px bottom;
 	}
 	.summer__foto-1 {
-		top: -70px;
+		top: -60px;
 	}
 	.summer__section {
 		background: none;
@@ -185,6 +278,52 @@
 	.sprey__img {
 		width: 200px;
 		left: 30px;
+	}
+	.reviews__section {
+		height: 1450px;
+	}
+	.review__block {
+		width: 450px;
+	}
+	.review__slider {
+		height: 420px;
+	}
+	.review__slider .slide {
+		padding: 50px 30px 100px 30px; 
+	}
+	.delivery__wrapper {
+		margin-top: 100px;
+		width: 450px;
+	}
+	.site__footer {
+		background-color: #C11855;
+		width: 100%;
+		height: 445px;
+		background-image: 
+			url("../img/footer-left.png"),
+			url("../img/footer-right.png"),
+			url("../img/footer-birds.png");
+		background-repeat: no-repeat;
+		background-size: 
+			400px,
+			300px,
+			130px;
+		background-position: 
+			left bottom,
+			right bottom,
+			320px 35px;
+		position: relative;
+		z-index: 1;
+	}
+	.site__footer .container {
+		width: 900px;
+	}
+	.footer__logo {
+		margin-top: 30px;
+		margin-bottom: 40px; 
+	}
+	.footer__title {
+		font-size: 40px;
 	}
 }
 
@@ -315,6 +454,111 @@
 		width: 100%;
 		height: 100%;
 	}
+	.reviews__section {
+		height: 1300px;
+		padding-top: 70px;
+	}
+	.review__block {
+		width: 400px;
+	}
+	.review__block .block__title {
+		margin-bottom: 30px;
+	}
+	.review__slider .slider{
+		height: 420px;
+		margin: 0;
+	}
+	.review__slider .slide {
+		padding: 30px 30px 100px 30px; 
+	}
+	.review__slider .slick-dots {
+		left: 30px;
+	}
+	.review__img1-wrapper {
+		width: 350px;
+		height: 470px;
+		top: 30px;
+	}
+	.review__img1-wrapper:before {
+		top: -30px;
+		left: -30px;
+		width: 350px;
+		height: 350px;
+	}
+	.review__img2-wrapper {
+		width: 360px;
+		height: 550px;
+		bottom: -30px;
+	}
+	.review__img2-wrapper:before {
+		width: 360px;
+		height: 360px;
+		top: -30px;
+		right: -30px;
+	}
+	.delivery__wrapper {
+		margin-top: 60px;
+		width: 420px;
+	}
+	.delivery__stage {
+		margin-bottom: 30px;
+		margin-left: 60px;
+	}
+	.stage__img {
+		left: -80px;
+	}
+	.site__footer {
+		background-color: #C11855;
+		width: 100%;
+		height: 420px;
+		background-image: 
+			url("../img/footer-left.png"),
+			url("../img/footer-right.png"),
+			url("../img/footer-birds.png");
+		background-repeat: no-repeat;
+		background-size: 
+			420px,
+			280px,
+			130px;
+		background-position: 
+			left -50px bottom,
+			right bottom,
+			320px 35px;
+		position: relative;
+		z-index: 1;
+	}
+	.site__footer .container {
+		width: 800px;
+	}
+	.footer__logo {
+		margin-top: 30px;
+		margin-bottom: 30px; 
+	}
+	.footer__title {
+		font-size: 34px;
+	}
+	.footer__text {
+		text-align: center;
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+	.footer__price {
+		width: 290px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	} 
+	.footer__price .price{
+		width: 100%;
+		margin-bottom: 10px;
+		.old__price {
+			font-size: 20px;
+		}
+		.new__price {
+			font-size: 42px;
+		}
+	}
 }
 
 @media (max-width: 880px) {
@@ -444,7 +688,7 @@
 		width: 290px;
 	}
 	.card .card__back {
-		top: 450px;
+		top: 420px;
 		right: 30px;
 	}
 	.card__btns-color{
@@ -493,7 +737,7 @@
 		}
 		.card__title {
 			position: absolute;
-			width: 700px;
+			width: 100%;
 			top: 60px;
 			left: 50%;
 			transform: translateX(-50%);
@@ -515,6 +759,9 @@
 			padding: 420px 15px 100px 15px;
 			justify-content: flex-end;
 			align-items: center;
+		}
+		.card__info-order .card__title {
+			margin: 0;
 		}
 		.card__price {
 			width: 290px;
@@ -555,6 +802,145 @@
 	}
 	.sprey__advantage {
 		margin-bottom: 20px;
+	}
+	.reviews__section {
+		height: auto;
+		padding-top: 70px;
+	}
+	.reviews {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.reviews__wrapper {
+		margin-top: 500px;
+		margin-bottom: 740px;
+	}
+	.review__block {
+		width: 500px;
+	}
+	.review__block .block__title {
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	.review__slider{
+		height: 360px;
+		margin: 0;
+	}
+	.review__slider .slide {
+		padding: 30px 30px 100px 30px; 
+	}
+	.review__slider .slick-dots {
+		left: 30px;
+	}
+	.review__img1-wrapper {
+		width: 350px;
+		height: 470px;
+		top: 0px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.review__img1-wrapper:before {
+		top: -30px;
+		left: -30px;
+		width: 350px;
+		height: 350px;
+	}
+	.review__img2-wrapper {
+		width: 360px;
+		height: 550px;
+		bottom: auto;
+		top: 1080px;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.review__img2-wrapper:before {
+		width: 360px;
+		height: 360px;
+		top: -30px;
+		right: -30px;
+	}
+	.delivery__wrapper {
+		margin-top: 0px;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.delivery__block {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.delivery__stage {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 0;
+		margin-bottom: 20px;
+		padding-top: 60px;
+	}
+	.stage__img {
+		top: 0px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.stage__text {
+		text-align: center;
+	}
+	.site__footer {
+		background-color: #C11855;
+		width: 100%;
+		height: 450px;
+		background-image: 
+			url("../img/footer-left.png"),
+			url("../img/footer-right.png");
+		background-repeat: no-repeat;
+		background-size: 
+			350px,
+			220px;
+		background-position: 
+			left -50px bottom,
+			right bottom;
+		position: relative;
+		z-index: 1;
+	}
+	.site__footer .container {
+		width: 640px;
+	}
+	.footer__logo {
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px; 
+	}
+	.footer__title {
+		font-size: 34px;
+	}
+	.footer__text {
+		text-align: center;
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+	.footer__price {
+		width: 290px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	} 
+	.footer__price .price{
+		width: 100%;
+		margin-bottom: 10px;
+		.old__price {
+			font-size: 20px;
+		}
+		.new__price {
+			font-size: 42px;
+		}
 	}
 }
 
@@ -704,6 +1090,10 @@
 	.card .card__title {
 		width: 100%;
 	}
+	.card .card__back {
+		top: 460px;
+		right: 30px;
+	}
 	.sprey__card {
 		height: 920px;
 	}
@@ -731,6 +1121,29 @@
 	}
 	.sprey__card .sprey__advantages.active {
 		display: none;
+	}
+	.site__footer {
+		background-color: #C11855;
+		width: 100%;
+		height: 450px;
+		background-image: 
+			url("../img/footer-left.png"),
+			url("../img/footer-right.png");
+		background-repeat: no-repeat;
+		background-size: 
+			350px,
+			220px;
+		background-position: 
+			left -50px bottom,
+			right bottom;
+		position: relative;
+		z-index: 1;
+	}
+	.site__footer .container {
+		width: 500px;
+	}
+	.footer__text {
+		width: 100%;
 	}
 }
 
@@ -789,7 +1202,7 @@
 	.card__info-order {
 		padding: 0px 15px 100px 15px;
 	}
-	.card__back {
+	.card .card__back {
 		top: 520px;
 	}
 	.card__btns-color {
@@ -800,6 +1213,53 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+	.review__block {
+		width: 400px;
+	}
+	.review__slider{
+		height: 340px;
+		margin: 0;
+	}
+	.review__slider .slide {
+		padding: 20px 15px; 
+	}
+	.review__slider .slick-dots {
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -60px;
+	}
+	.add__review {
+		bottom: -100px;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.site__footer {
+		background-color: #C11855;
+		width: 100%;
+		height: 660px;
+		background-image: url("../img/footer-mobile.png");
+		background-size: 800px;
+		background-position: left bottom;
+		background-repeat: no-repeat; 
+		position: relative;
+		z-index: 1;
+	}
+	.footer__wrapper {
+		justify-content: space-between;
+		height: 100%;
+		padding: 50px 0;
+		padding-bottom: 60px;
+	}
+	.footer__logo {
+		margin-top: 0;
+	}
+	.site__footer .container {
+		width: 400px;
+		height: 100%;
+	}
+	.footer__text {
+		width: 100%;
 	}
 }
 
@@ -837,7 +1297,7 @@
 		top: 0;
 	}
 	.summer__section .block__title {
-		margin-top: 450px;
+		margin-top: 350px;
 		font-size: 24px;
 	}
 	.summer__foto-wrapper {
@@ -866,6 +1326,78 @@
 	.info__block-text {
 		font-size: 18px;
 	}
+	.card__section {
+		background-image: none;
+	}
+	.card__2 .card__title {
+		width: 240px;
+	}
+	// .review__img1-wrapper {
+	// 	width: 100%;
+	// 	height: 470px;
+	// }
+	.reviews__wrapper {
+		width: 290px;
+	}
+	.review__img2-wrapper {
+		top: 1100px;
+	}
+	.review__img2-wrapper:before {
+		width: 200px;
+		height: 160px;
+		top: -30px;
+		right: -30px;
+	}
+	.review__img1-wrapper:before {
+		top: -30px;
+		left: -30px;
+		width: 200px;
+		height: 160px;
+	}
+	.review__text {
+		font-size: 16px;
+	}
+	.review__block {
+		width: 290px;
+	}
+	.review__slider{
+		height: 360px;
+		margin: 0;
+	}
+	.review__slider .slide {
+		padding: 20px 15px; 
+	}
+	.review__slider .slick-dots {
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -60px;
+	}
+	.add__review {
+		bottom: -110px;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.reviews .block__title {
+		text-align: center;
+		margin-bottom: 30px;
+		font-size: 24px;
+	}
+	.reviews .block__title:before {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.site__footer .container {
+		width: 360px;
+	}
+	.footer__wrapper {
+		padding-bottom: 80px;
+	}
+	.footer-dev {
+		width: 290px;
+	}
+	.add__review {
+		width: 100%;
+	}
 }
 
 @media (max-width: 375px) {
@@ -892,6 +1424,26 @@
 		right: -30px;
 		width: 220px;
 		height: 200px;
+	}
+	.site__footer .container {
+		width: 290px;
+	}
+	.site__footer {
+		background-color: #C11855;
+		width: 100%;
+		height: 660px;
+		background-image: url("../img/footer-mobile.png");
+		background-size: 600px;
+		background-position: left bottom;
+		background-repeat: no-repeat; 
+		position: relative;
+		z-index: 1;
+	}
+	.footer__title {
+		font-size: 30px;
+	}
+	.footer__text {
+		font-size: 20px;
 	}
 }
 

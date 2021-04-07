@@ -1,13 +1,19 @@
 .site__main {
 	width: 100%;
 	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .first__section {
 	width: 100%;
 	height: auto;
 	position: relative;
-	margin-bottom: 46px;
+	padding-bottom: 46px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .summer__section {
@@ -21,7 +27,7 @@
 
 .summer__section-wrapper {
 	width: 100%;
-	height: 994px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -77,7 +83,7 @@
 }
 
 .advantages {
-	margin-top: 400px;
+	margin-top: 450px;
 }
 
 .advantage {
@@ -123,7 +129,7 @@
 	height: 590px;
 	z-index: 10;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-	top: -136px;
+	top: -86px;
 	left: -50px;
 }
 
@@ -226,7 +232,27 @@
 	text-align: center;
 	opacity: 0;
 	transition: 0.3s ease;
+	position: relative;
+	margin-right: 20px;
 }
+
+.info__number:after {
+	content: "+";
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 59px;
+	color: #DEC1BC;
+	text-align: center;
+	transition: 0.3s ease;
+	position: absolute;
+	top: 50%;
+	right: -30px;
+	transform: translateY(-50%);
+}
+
+
 
 .info__block-text {
 	font-family: Montserrat;
@@ -236,6 +262,8 @@
 	line-height: 167%;
 	text-align: center;
 	color: #2F2F2F;
+	width: 100%;
+	word-wrap: wrap;
 }
 
 .info__order {
@@ -250,18 +278,19 @@
 	padding: 0;
 	height: auto;
 	position: relative;
-	margin-bottom: 46px;
 	display: flex;
-	justify-content: space-between;
 }
 
 .galary__block {
 	width: 25%;
-	height: auto;
+	max-height: 713px;
 	padding: 0;
+	display: inline-block;
 	a {
 		margin: 0;
 		padding: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -272,5 +301,5 @@
 }
 
 .first__section .sale__line {
-	bottom: -46px;
+	bottom: 0px;
 }

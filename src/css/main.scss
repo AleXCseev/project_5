@@ -14,6 +14,11 @@ img {
 	pointer-events: none;
 }
 
+p {
+	width: 100%;
+	word-wrap: wrap;
+}
+
 a, button {
 	outline: none;
 }
