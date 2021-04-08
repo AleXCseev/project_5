@@ -225,6 +225,12 @@
 	}
 }
 
+.card__1 .card__info-order {
+	.card__title {
+		margin-bottom: 80px;
+	}
+}
+
 .active__info {
 	display: flex !important;
 }
@@ -238,19 +244,19 @@
 .card__input {
 	width: 100%;
 	height: 30px;
-	border-bottom: 1px solid #C11855;
 	margin-bottom: 30px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 30px;
-	color: #C11855;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	padding: 0 10px;
 	outline: none;
+	border-bottom: 1px solid #2F2F2F;
+	color: #2F2F2F;
 }
 
 .card__input::placeholder {
@@ -263,13 +269,13 @@
 }
 
 .card__input:focus::placeholder {
-	border-bottom: 1px solid #2F2F2F;
-	color: #2F2F2F;
+	color: #C11855;
+	border-bottom: 1px solid #C11855;
 }
 
 .card__input:focus {
-	border-bottom: 1px solid #2F2F2F;
-	color: #2F2F2F;
+	color: #C11855;
+	border-bottom: 1px solid #C11855;
 }
 
 .card__info-sale {
@@ -408,7 +414,7 @@
 	display: flex;
 	bottom: 28px;
 	left: 50px;
-	z-index: 100;
+	z-index: 1000;
 	li {
 		width: 50px;
 		height: 5px;
@@ -429,6 +435,7 @@
 		width: 50px;
 		height: 5px;
 		background-color:#DEC1BC;
+		z-index: 100000;
 	}
 	li.slick-active:before {
 		content: attr(data-current);
@@ -465,6 +472,7 @@
 	width: 250px;
 	height: 1px;
 	background-color: #FFF;
+	z-index: 100000;
 }
 
 .sprey__card {
@@ -477,10 +485,11 @@
 .sprey__card .card__title {
 	margin-bottom: 60px;
 	margin-top: -20px;
+	font-size: 24px;
 }
 
 .sprey__card .card__info-order .card__title {
-    margin-top: -20px;
+    margin-top: -30px;
 }
 
 .sprey__card .card__form {

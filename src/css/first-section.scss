@@ -21,7 +21,7 @@
 	height: auto;
 	background-image: url("../img/fs-tree.png");
 	background-repeat: no-repeat;
-	background-position: right bottom;
+	background-position: right bottom -10px;
 	background-size: 540px;
 }
 
@@ -296,7 +296,7 @@
 
 .galary__img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	pointer-events: auto;
 }
 

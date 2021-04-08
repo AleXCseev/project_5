@@ -1,6 +1,6 @@
-@media (max-width: 1600px) {
+@media (max-width: 1680px) {
 	.site__header {
-		height: 650px;
+		height: 680px;
 		background-color: #F3F3F3;
 	}
 	.site__header:before {
@@ -50,7 +50,7 @@
 		margin-top: 350px;
 	}
 	.galary__block {
-		max-height: 539px;
+		max-height: 560px;
 	}
 	.site__footer {
 		background-color: #C11855;
@@ -103,7 +103,7 @@
 		height: 850px;
 		background-image: url("../img/info-bg.jpg");
 		background-repeat: no-repeat;
-		background-position: left -300px bottom;
+		background-position: left -270px bottom;
 		background-size: cover;
 	}
 	.info__wrapper {
@@ -159,6 +159,7 @@
 	.card .header__order-btn, .sprey__card .header__order-btn {
 		width: 100%;
 		height: 80px;
+		line-height: 80px;
 	}
 	.card__input {
 		margin-bottom: 20px;
@@ -229,11 +230,28 @@
 	.footer__title {
 		font-size: 44px;
 	}
+	.footer__price .price{
+		.old__price {
+			font-size: 22px;
+		}
+		.new__price {
+			font-size: 46px;
+		}
+	}
 }
 
 @media (max-width: 1366px) {
+	.site__header {
+		height: 670px;
+	}
 	.galary__block {
-		max-height: 511px;
+		max-height: 500px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.galary__block {
+		max-height: 540px;
 	}
 }
 
@@ -343,9 +361,12 @@
 	.summer__section-wrapper {
 		height: 850px;
 	}
+	.summer__section .title__wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
 	.summer__section .block__title {
 		width: 340px;
-		margin-left: auto;
 	}
 	.summer__foto-1 {
 		width: 300px;
@@ -561,6 +582,12 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.galary__block {
+		max-height: 360px;
+	}
+}
+
 @media (max-width: 880px) {
 	.site__header {
 		height: 650px;
@@ -632,7 +659,7 @@
 		left: -60px;
 	}
 	.card {
-		height: 890px;
+		height: 920px;
 		position: relative;
 	}
 	.card__left {
@@ -672,7 +699,7 @@
 		width: 290px;
 	}
 	.card .card__info-block {
-		padding: 420px 50px 100px 50px;
+		padding: 440px 50px 100px 50px;
 		justify-content: flex-end;
 		align-items: center;
 	}
@@ -719,7 +746,6 @@
 			width: 100%;
 			height: 300px;
 			justify-content: flex-start;
-			padding: 15px;
 		}
 		.slider {
 			margin-top: 0px;
@@ -939,7 +965,7 @@
 			font-size: 20px;
 		}
 		.new__price {
-			font-size: 42px;
+			font-size: 38px;
 		}
 	}
 }
@@ -970,17 +996,15 @@
 		height: 850px;
 	}
 	.site__header:before {
+		background-color: #F2F2F2;
 		background-image: 
-			url("../img/header-left.png"),
-			url("../img/header-birds.png"),
+			url("../img/header-mobile.png"),
 			url("../img/header-right.jpg");
 		background-position: 
 			left bottom 40px,
-			300px 500px,
 			-550px top;
 		background-size: 
-			500px, 
-			250px, 
+			500px,  
 			1250px;
 	}
 	.header__content {
@@ -1095,7 +1119,7 @@
 		right: 30px;
 	}
 	.sprey__card {
-		height: 920px;
+		height: 960px;
 	}
 	.sprey__img {
 		top: 50%;
@@ -1106,7 +1130,7 @@
 	.sprey__info {
 		width: 290px;
 		position: absolute;
-		top: 300px;
+		top: 330px;
 		left: 50%;
 		transform: translateX(-50%);
 		color: #2F2F2F;
@@ -1151,6 +1175,18 @@
 	.container {
 		width: 400px;
 	}
+	.header__order {
+		width: 290px;
+	}
+	.price {
+		width: 290px;
+		.old__price {
+			font-size: 20px;
+		}
+		.new__price {
+			font-size: 38px;
+		}
+	}
 	.galary {
 		width: 320px;
 		height: 518px;
@@ -1188,7 +1224,7 @@
 		width:  100%;
 	}
 	.card {
-		height: 980px;
+		height: 1000px;
 	}
 	.slider__btns {
 		display: none;
@@ -1265,31 +1301,30 @@
 
 @media (max-width: 414px) {
 	.site__header {
-		height: 900px;
+		height: 640px;
+		margin-bottom: 250px;
 	}
 	.container {
 		width: 360px;
 	}
 	.site__header:before {
 		background-image: 
-			url("../img/header-left.png"),
-			url("../img/header-birds.png"),
+			url("../img/header-mobile.png"),
 			url("../img/header-right.jpg");
 		background-position: 
-			left bottom 230px,
-			150px 450px,
+			left bottom -5px,
 			-600px top;
 		background-size: 
-			300px, 
-			200px, 
+			270px, 
 			1200px;
 	}
+
 	.header__title {
-		margin-bottom: 130px;
+		margin-bottom: 105px;
 		font-size: 28px;
 	}
 	.site__header .sale__line {
-		bottom: 180px;
+		bottom: -50px;
 	}
 	.summer__foto-1 {
 		width: 100%;
@@ -1297,7 +1332,7 @@
 		top: 0;
 	}
 	.summer__section .block__title {
-		margin-top: 350px;
+		margin-top: 380px;
 		font-size: 24px;
 	}
 	.summer__foto-wrapper {
@@ -1405,7 +1440,7 @@
 		width: 290px;
 	}
 	.summer__section .block__title {
-		margin-top: 430px;
+		margin-top: 320px;
 	}
 	.advantages {
 		margin-bottom: 540px;
